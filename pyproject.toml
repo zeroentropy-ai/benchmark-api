@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=78"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "benchmark"
+version = "0.1.0"
+description = "This is the API benchmark repository for ZeroEntropy."
+readme = "README.md"
+requires-python = "==3.12.*"
+authors = [{ name = "Nicholas Pipitone", email = "pipitone@zeroentropy.dev" }]
+classifiers = []
+dependencies = [
+    "python-dotenv==1.2.1",
+    "typed_argparse==0.3.1",
+    "cohere==5.20.2",
+    "httpx[http2]==0.28.1",
+    "numpy==2.4.2",
+    "matplotlib==3.10.8",
+    "ipykernel==7.1.0",
+    "datasets==4.5.0",
+    # Development
+    "basedpyright==1.28.4",
+    "ruff==0.11.4",
+]
